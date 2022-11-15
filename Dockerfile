@@ -5,7 +5,7 @@ RUN apt-get update \
     && apt-get install -y \
         vim
 
-RUN apt-get update && apt-get install -y magic-wormhole
+RUN apt-get update && apt-get install -y magic-wormhole git
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
